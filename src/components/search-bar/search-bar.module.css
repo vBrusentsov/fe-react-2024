@@ -1,0 +1,110 @@
+.filterPanelContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1175px;
+  width: 100%;
+  padding-top: 53px;
+  gap: 40px;
+}
+
+.searchBar {
+  display: flex;
+  width: 275px;
+  position: relative;
+}
+
+.searchBarInput {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #E1E1E1;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.searchBarButton {
+  display: flex;
+  background: #EF4934;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.searchBarImage {
+  display: flex;
+  position: absolute;
+  left: 10px;
+}
+
+.categoriesContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.categoriesButton {
+  display: flex;
+  border: 1px solid #E1E1E1;
+  height: 100%;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #656565;
+}
+
+.sortFilter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sortFilterParagraph {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sortFilterList {
+  display: flex;
+  border: 1px solid #E1E1E1;
+  border-radius: 20px;
+  height: 40px;
+  width: 196px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #656565;
+  text-align-last: center;
+  appearance: none; /* Removes default select styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none;
+  background-image: url("../../assets/Caret_Down_MD.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+.sortFilterList option {
+  display: flex;
+  background: #E1E1E1;
+  height: 10px;
+  text-align-last: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sortFilterList:hover {
+  background: #EF4934;
+}
+
+.sortFilterList option:hover,
+.sortFilterList option:focus {
+  background: #EF4934;
+}
