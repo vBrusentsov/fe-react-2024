@@ -6,3 +6,43 @@ body {
   background: #FFF;
   color: #111;
 }
+
+.AppLight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  --button-background: #FFF;
+  --button-color: #656565;
+  --button-tertiary-background: #FFF;
+  --button-tertiary-color: #656565;
+  --button-tertiary-background-hover: #EF4934;
+  --button-tertiary-color-hover: #FFF;
+  --searchBarInput-background-focus: #E1E1E1;
+  --sortFilterList-color: #656565;
+  --bg-primary: #FFF;
+  --text-primary: #111;
+  --border-color: #CCC;
+  --searchBar-border-color: #E1E1E1;
+}
+
+.AppDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  --bg-primary: #111;
+  --text-primary: #FFF;
+  --button-background: #FFF;
+  --button-color: #656565;
+  --button-tertiary-background: #111;
+  --button-tertiary-color: #FFF;
+  --searchBarInput-background-focus: #333;
+  --sortFilterList-color: #FFF;
+  --button-tertiary-background-hover: #EF4934;
+  --button-tertiary-color-hover: #FFF;
+  --border-color: #333;
+  --searchBar-border-color: #656565;
+}

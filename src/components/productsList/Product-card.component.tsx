@@ -1,11 +1,15 @@
 import type { FC } from 'react';
 import { useState } from 'react';
 
-import addToCardImage from '@/assets/AddToCard.svg';
+import AddToCardImage from '@/assets/AddToCard.svg?react';
 import styles from '@/components/productsList/produc-list.module.css';
 import type { ProductsInterface } from '@/interface/product-interface.ts';
 
-export const ProductCard: FC<{ product: ProductsInterface }> = ({ product }) => {
+export interface ProductListProps {
+    product: ProductsInterface;
+}
+
+export const ProductCard: FC<ProductListProps> = ({ product }) => {
     const [count, setCount] = useState(0);
 
     const incrementCount = () => {
@@ -21,7 +25,7 @@ export const ProductCard: FC<{ product: ProductsInterface }> = ({ product }) => 
                 <div className={styles.addProductToCardContainer}>
                     {count > 0 && <p className={styles.countItems}>{count}</p>}
                     <button className={styles.addToCardButton} onClick={incrementCount}>
-                        <img className={styles.addProductToCard} src={addToCardImage} alt="add·product·to·card" />
+                        <AddToCardImage className={styles.addProductToCard} />
                     </button>
                 </div>
             </div>

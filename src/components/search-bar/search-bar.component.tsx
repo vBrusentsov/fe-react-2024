@@ -1,6 +1,8 @@
 import searchIcon from '../../assets/LensIcon.svg';
+import { Button } from '../button/Button.component.tsx';
 
 import styles from './search-bar.module.css';
+
 export const SearchBarComponent = () => (
     <div className={styles.filterPanelContainer}>
         <form className={styles.searchBar} action="#">
@@ -9,11 +11,11 @@ export const SearchBarComponent = () => (
                 <img className={styles.searchBarImage} src={searchIcon} alt="Search Icon" />
             </button>
         </form>
-        <div className={styles.sortFilterContainre}>
+        <div className={styles.sortFilterContainer}>
             <div className={styles.categoriesContainer}>
-                <button className={styles.categoriesButton}>Electronics</button>
-                <button className={styles.categoriesButton}>Shoes</button>
-                <button className={styles.categoriesButton}>Clothes</button>
+                <Button variant="tertiary">Electronics</Button>
+                <Button variant="tertiary">Shoes</Button>
+                <Button variant="tertiary">Clothes</Button>
             </div>
             <div className={styles.sortFilter}>
                 <p className={styles.sortFilterParagraph}>Sort by:</p>

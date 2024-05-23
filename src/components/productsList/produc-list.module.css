@@ -1,7 +1,7 @@
 .mainCard {
   display: flex;
   justify-content: center;
-  padding: 52px;
+  padding: 30px;
 }
 
 .cardContainer {
@@ -12,14 +12,16 @@
   flex-wrap: wrap;
   gap: 25px;
   padding: 0;
+  margin: 0;
 }
 
 .card {
   display: flex;
   max-width: 275px;
   width: 100%;
+  justify-content: space-between;
   flex-direction: column;
-  border: 1px solid #CCC;
+  border: 1px solid var(--border-color);
   border-radius: 20px;
   padding: 20px 15px;
   gap: 20px;
@@ -67,6 +69,7 @@
 .addProductToCard {
   display: flex;
   margin: 0;
+  color: var(--text-primary);
 }
 
 .addProductToCardContainer {
@@ -87,4 +90,11 @@
   position: absolute;
   bottom: 5px;
   left: 15px;
+}
+
+@media only screen and (min-width: 1250px) {
+
+  .mainCard {
+    padding: 52px;
+  }
 }

@@ -8,16 +8,18 @@ import { mockData } from './mock-data.ts';
 
 import './App.css';
 
-function App() {
-    const [currentComponent, setCurrentComponent] = useState('About');
+export type CurrentComponent = 'About' | 'ProductList';
+export type CurrentTheme = 'Light' | 'Dark';
 
-    const navigationComponent = (componentName: string) => setCurrentComponent(componentName);
+function App() {
+    const [currentComponent, setCurrentComponent] = useState<CurrentComponent>('About');
+    const [currentTheme, setCurrentTheme] = useState<CurrentTheme>('Light');
     return (
-        <>
-            <HeaderComponent navigationComponent={navigationComponent} />
+        <div className={`App${currentTheme}`}>
+            <HeaderComponent setCurrentComponent={setCurrentComponent} setCurrentTheme={setCurrentTheme} />
             {currentComponent === 'About' ? <AboutMeComponents /> : <ProductsListComponent products={mockData} />}
             <FooterComponent />
-        </>
+        </div>
     );
 }
 

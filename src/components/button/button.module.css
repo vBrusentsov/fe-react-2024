@@ -1,0 +1,40 @@
+.button {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--searchBar-border-color);
+  height: 100%;
+  background: transparent;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.button.primary {
+  background: var(--button-background);
+  color: var(--button-color);
+}
+
+.button.tertiary {
+  background: var(--button-tertiary-background);
+  color: var(--button-tertiary-color);
+}
+
+.button.tertiary:hover {
+  background: var(--button-tertiary-background-hover);
+  color: var(--button-tertiary-color-hover);
+}
+
+/*.AppLight .button {*/
+/*  --button-background: #FFF;*/
+/*  --button-color: #656565;*/
+/*  --button-tertiary-background: #E1E1E1;*/
+/*  --button-tertiary-color: red;*/
+/*}*/
+
+/*.AppDark .button {*/
+/*  --button-background: #FFF;*/
+/*  --button-color: #656565;*/
+/*  --button-tertiary-background: #E1E1E1;*/
+/*  --button-tertiary-color: red;*/
+/*}*/
