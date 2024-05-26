@@ -24,17 +24,3 @@
   background: var(--button-tertiary-background-hover);
   color: var(--button-tertiary-color-hover);
 }
-
-/*.AppLight .button {*/
-/*  --button-background: #FFF;*/
-/*  --button-color: #656565;*/
-/*  --button-tertiary-background: #E1E1E1;*/
-/*  --button-tertiary-color: red;*/
-/*}*/
-
-/*.AppDark .button {*/
-/*  --button-background: #FFF;*/
-/*  --button-color: #656565;*/
-/*  --button-tertiary-background: #E1E1E1;*/
-/*  --button-tertiary-color: red;*/
-/*}*/

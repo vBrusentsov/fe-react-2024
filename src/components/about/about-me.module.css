@@ -33,7 +33,7 @@
 }
 
 .aboutMeParagraph a {
-  color: #111;
+  color: var(--link-text-color);
 }
 
 @media only screen and (min-width: 1250px) {

@@ -25,6 +25,7 @@ body {
   --text-primary: #111;
   --border-color: #CCC;
   --searchBar-border-color: #E1E1E1;
+  --link-text-color: #111
 }
 
 .AppDark {
@@ -45,4 +46,5 @@ body {
   --button-tertiary-color-hover: #FFF;
   --border-color: #333;
   --searchBar-border-color: #656565;
+  --link-text-color: #FFF
 }
