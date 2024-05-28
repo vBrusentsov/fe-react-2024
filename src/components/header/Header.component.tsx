@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { HeaderNavigationComponent } from '@/interface/header-nvigation-component-interface.ts';
+import type { CurrentComponent, CurrentTheme } from '@/App.tsx';
 
 import burgerMenu from '../../assets/BurgerMenu.svg';
 import darkTheme from '../../assets/DarkThemes.svg';
@@ -12,16 +12,21 @@ import signupLogo from '../../assets/SignupLogo.svg';
 
 import styles from './header.module.css';
 
-export const HeaderComponent: React.FC<HeaderNavigationComponent> = ({ navigationComponent }) => (
+export interface HeaderProps {
+    setCurrentComponent: (componentName: CurrentComponent) => void;
+    setCurrentTheme: (themeName: CurrentTheme) => void;
+}
+
+export const HeaderComponent: React.FC<HeaderProps> = ({ setCurrentComponent, setCurrentTheme }) => (
     <header className={styles.header}>
         <div className={styles.themesContainer}>
             <img className={styles.logoMA} src={logoMA} alt="Logo MA" />
             <div className={styles.themesMenuContainer}>
-                <button className={styles.lightThemeButton}>
+                <button className={styles.lightThemeButton} onClick={() => setCurrentTheme('Light')}>
                     <img className={styles.ligthThemeIcon} src={lightTheme} alt="Ligth Theme" />
                 </button>
                 <hr className={styles.customHr} />
-                <button className={styles.darkThemesButton}>
+                <button className={styles.darkThemesButton} onClick={() => setCurrentTheme('Dark')}>
                     <img className={styles.darkThemeIcon} src={darkTheme} alt="Dark Theme" />
                 </button>
             </div>
@@ -34,7 +39,7 @@ export const HeaderComponent: React.FC<HeaderNavigationComponent> = ({ navigatio
                         href="/#"
                         onClick={(element: React.MouseEvent<HTMLAnchorElement>) => {
                             element.preventDefault();
-                            navigationComponent('About');
+                            setCurrentComponent('About');
                         }}
                     >
                         About
@@ -46,7 +51,7 @@ export const HeaderComponent: React.FC<HeaderNavigationComponent> = ({ navigatio
                         href="/#"
                         onClick={(element: React.MouseEvent<HTMLAnchorElement>) => {
                             element.preventDefault();
-                            navigationComponent('ProductList');
+                            setCurrentComponent('ProductList');
                         }}
                     >
                         Products

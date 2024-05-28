@@ -1,0 +1,136 @@
+.filterPanelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1175px;
+  width: 100%;
+  padding-top: 53px;
+  gap: 40px;
+}
+
+.searchBar {
+  display: flex;
+  width: 275px;
+  position: relative;
+}
+
+.searchBarInput {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--searchBar-border-color);
+  border-radius: 20px;
+  background: transparent;
+  padding: 15px 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.searchBarInput:focus {
+  background: var(--searchBarInput-background-focus);
+}
+
+.searchBarButton {
+  display: flex;
+  background: #EF4934;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.searchBarImage {
+  display: flex;
+  position: absolute;
+  left: 10px;
+}
+
+.sortFilterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.categoriesContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.sortFilter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sortFilterParagraph {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sortFilterList {
+  display: flex;
+  border: 1px solid var(--searchBar-border-color);
+  border-radius: 20px;
+  height: 40px;
+  width: 196px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--sortFilterList-color);
+  text-align: center;
+  text-align-last: center;
+  appearance: none; /* Removes default select styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none;
+  background: transparent url("../../assets/Caret_Down_MD.svg") no-repeat right 10px top 50%;
+}
+
+.sortFilterList option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  color: #1A1A1A;
+  text-align-last: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sortFilterList-items {
+  display: flex;
+  justify-content: center;
+  background: #FFF;
+  z-index: 99;
+}
+
+
+.sortFilterList:hover {
+  background: #EF4934;
+  color: #FFF;
+}
+
+.sortFilterList option:hover,
+.sortFilterList option:focus {
+  background: #FFF;
+}
+
+@media only screen and (min-width: 1250px) {
+
+  .filterPanelContainer {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .sortFilterContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+}
