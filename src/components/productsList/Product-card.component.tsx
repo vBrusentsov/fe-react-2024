@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import { useState } from 'react';
 
 import AddToCardImage from '@/assets/AddToCard.svg?react';
-import styles from '@/components/productsList/produc-list.module.css';
+import styles from '@/components/productsList/product-list.module.css';
 import type { ProductsInterface } from '@/interface/product-interface.ts';
 
 export interface ProductListProps {
