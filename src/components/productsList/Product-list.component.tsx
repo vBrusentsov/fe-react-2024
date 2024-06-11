@@ -16,7 +16,7 @@ export const ProductsList: FC<ProductListComponentPropsInterface> = ({ products 
     const [selectedCategory, setSelectedCategory] = useState('');
     const [sortBy, setSortBy] = useState<string>('');
 
-    const productPerPage: number = 2;
+    const productPerPage: number = 8;
 
     const handleSearchChange = (term: string): void => {
         setSearchTerm(term);
