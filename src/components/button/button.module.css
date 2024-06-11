@@ -15,6 +15,10 @@
   color: var(--button-color);
 }
 
+.button.activity {
+  background: var(--button-tertiary-background-hover);
+}
+
 .button.tertiary {
   background: var(--button-tertiary-background);
   color: var(--button-tertiary-color);
