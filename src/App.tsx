@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { AboutMeComponents } from './components/about/About-me.component.tsx';
 import { FooterComponent } from './components/footer/Footer.component.tsx';
 import { HeaderComponent } from './components/header/Header.component.tsx';
-import { ProductsListComponent } from './components/productsList/Product-list.component.tsx';
+import { ProductsList } from './components/productsList/Product-list.component.tsx';
 import { mockData } from './mock-data.ts';
 
 import './App.css';
@@ -17,7 +17,7 @@ function App() {
     return (
         <div className={`App${currentTheme}`}>
             <HeaderComponent setCurrentComponent={setCurrentComponent} setCurrentTheme={setCurrentTheme} />
-            {currentComponent === 'About' ? <AboutMeComponents /> : <ProductsListComponent products={mockData} />}
+            {currentComponent === 'About' ? <AboutMeComponents /> : <ProductsList products={mockData} />}
             <FooterComponent />
         </div>
     );
